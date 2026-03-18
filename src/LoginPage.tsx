@@ -87,7 +87,7 @@ export default function LoginPage() {
         </div>
         <div className="text-center px-[45px] pb-8 relative z-10">
           <p className="font-lora font-bold text-[20px] text-[#61227D] leading-snug">Team Achieve</p>
-          <p className="mt-1 text-[13px] text-[#5E5E5E] leading-relaxed">Your perfect solution for funding your desires</p>
+          <h1 className="mt-1 text-bold text-[20px] text-[#5E5E5E] leading-relaxed">Your perfect solution for funding your desires</h1>
         </div>
       </aside>
 
@@ -97,10 +97,14 @@ export default function LoginPage() {
             <div className="flex flex-col items-center gap-2 mb-8 lg:hidden">
               <img src={Simplylogo} alt="Logo" className="w-[160px] object-contain" />
             </div>
-            <div className="mb-6">
-              <h1 className="font-lora font-bold text-gray-900 text-[32px] leading-[48px]">Welcome Back</h1>
-              <p className="text-gray-500 mt-1 text-[13.5px] leading-6 max-w-[360px]">Enter your email address and password to access your account.</p>
-            </div>
+        <div className="mb-6 flex flex-col items-center text-center">
+  <h1 className="font-lora font-bold text-[#61227D] text-[32px] leading-[48px]">
+    Welcome Back
+  </h1>
+  <p className="text-gray-500 mt-1 text-[13.5px] leading-6 whitespace-nowrap">
+    Enter your email address and password to access your account.
+  </p>
+</div>
 
             <form onSubmit={onSubmit} noValidate className="flex flex-col gap-6">
 
