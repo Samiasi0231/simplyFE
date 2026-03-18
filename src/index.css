@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=DM+Sans:wght@400;500;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base styles */
+@layer base {
+  /* Make all elements use border-box sizing */
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  /* Ensure html, body, and root fill the screen */
+  html, body, #root {
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Body default font and background */
+  body {
+    font-family: 'DM Sans', system-ui, sans-serif;
+    background-color: #FCFCFC;
+    margin: 0;
+  }
+}
+
+    /* Custom utility classes */
+@layer utilities {
+        /* Input focus ring for brand color */
+  .input-ring-brand {
+    box-shadow: 0 0 0 3px rgba(107, 33, 168, 0.12);
+  }
+
+        /* Input focus ring for error state */
+  .input-ring-error {
+    box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.10);
+  }
+
+      /* Button shadows */
+  .shadow-btn {
+    box-shadow: 0 4px 16px rgba(107, 33, 168, 0.38);
+  }
+
+  .shadow-btn-hover {
+    box-shadow: 0 6px 22px rgba(107, 33, 168, 0.48);
+  }
+}
