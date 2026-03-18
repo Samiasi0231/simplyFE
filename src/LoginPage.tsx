@@ -79,10 +79,10 @@ export default function LoginPage() {
       <aside className="hidden lg:flex flex-col w-[45%] min-h-screen bg-[#F0EEFF] border-r border-[#DDD6FE] relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none"
           style={{ background: 'radial-gradient(ellipse 70% 60% at 50% 45%, rgba(107,33,168,0.07) 0%, transparent 70%)' }} />
-        <div className="relative z-10 pt-6 pl-11">
+        <div className="relative z-10 pt-6 ml-2 ">
           <img src={Simplylogo} alt="Logo" className="w-[198px] h-[97px] object-contain" />
         </div>
-        <div className="flex flex-1 items-center justify-center px-[45px] relative z-10">
+        <div className="flex  flex-1 items-center justify-center px-[45px] relative z-10">
           <img src={Simplypeople} alt="People" className="w-full max-w-[626px] h-[417px] object-cover rounded-[20px] shadow-lg" />
         </div>
         <div className="text-center px-[45px] pb-8 relative z-10">
